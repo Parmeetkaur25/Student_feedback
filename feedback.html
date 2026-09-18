@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Feedback</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container nav-wrap">
+            <div class="brand">CampusPulse</div>
+            <nav class="top-nav">
+                <a href="index.html">All Feedback</a>
+                <a href="feedback.html" class="active">Give Feedback</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="page-shell">
+        <section class="hero hero-form">
+            <div class="hero-content">
+                <span class="eyebrow">Student voice</span>
+                <h1>We want to hear from you.</h1>
+                <p>
+                    Share your experience, ideas, and concerns so we can improve campus life and make the student journey better for everyone.
+                </p>
+                <div class="hero-badges">
+                    <span>⚡ Fast</span>
+                    <span>🎯 Honest</span>
+                    <span>💬 Open</span>
+                </div>
+            </div>
+
+            <div class="hero-panel">
+                <div class="panel-card highlight">
+                    <small>Response rate</small>
+                    <strong>92%</strong>
+                    <span>Students share feedback quickly</span>
+                </div>
+                <div class="panel-card">
+                    <small>Recent replies</small>
+                    <strong>1.2k+</strong>
+                    <span>From campus communities</span>
+                </div>
+            </div>
+        </section>
+
+        <div class="container form-container">
+            <div class="section-head">
+                <h2>Leave your feedback</h2>
+                <a href="index.html" class="nav-link">View all feedback</a>
+            </div>
+
+            <form id="feedbackForm" class="feedback-form">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Enter your name">
+                <div class="field-error" id="nameError" aria-live="polite"></div>
+
+                <label for="rating">Rating</label>
+                <select id="rating">
+                    <option value="">Select rating</option>
+                    <option value="1">⭐ 1</option>
+                    <option value="2">⭐⭐ 2</option>
+                    <option value="3">⭐⭐⭐ 3</option>
+                    <option value="4">⭐⭐⭐⭐ 4</option>
+                    <option value="5">⭐⭐⭐⭐⭐ 5</option>
+                </select>
+                <div class="field-error" id="ratingError" aria-live="polite"></div>
+
+                <label for="comment">Comment</label>
+                <textarea id="comment" placeholder="Write your feedback"></textarea>
+                <div class="field-error" id="commentError" aria-live="polite"></div>
+
+                <button type="submit" id="submitBtn">Submit Feedback</button>
+            </form>
+
+            <p id="message" class="message" role="status" aria-live="polite"></p>
+            <div id="toast" class="toast" aria-hidden="true"></div>
+        </div>
+    </main>
+
+    <script src="feedback.js"></script>
+</body>
+
+</html>
