@@ -11,9 +11,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon src/server.js"
+    "start": "nodemon src/server.js",
+    "deploy": "gh-pages -d public"
   },
+  "homepage": "https://Parmeetkaur25.github.io/Student_feedback",
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
+  }
 }
