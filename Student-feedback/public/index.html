@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Feedback</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container nav-wrap">
+            <div class="brand">CampusPulse</div>
+            <nav class="top-nav">
+                <a href="index.html" class="active">All Feedback</a>
+                <a href="feedback.html">Give Feedback</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="page-shell">
+        <section class="hero">
+            <div class="hero-content">
+                <span class="eyebrow">Student community</span>
+                <h1>Everything students are saying.</h1>
+                <p>
+                    Real feedback from students about campus life, learning experiences, and the energy that shapes the community every day.
+                </p>
+                <div class="hero-badges">
+                    <span>🏆 Top stories</span>
+                    <span>🎉 Events</span>
+                    <span>📣 Real feedback</span>
+                </div>
+            </div>
+
+            <div class="hero-panel">
+                <div class="panel-card highlight">
+                    <small>Avg. rating</small>
+                    <strong>4.7/5</strong>
+                    <span>Based on community reviews</span>
+                </div>
+                <div class="panel-card">
+                    <small>Student voices</small>
+                    <strong>1.2k+</strong>
+                    <span>Shared in the last month</span>
+                </div>
+            </div>
+        </section>
+
+        <div class="container list-container">
+            <div class="section-head">
+                <h2>All student feedback</h2>
+                <a href="feedback.html" class="nav-link">Give feedback</a>
+            </div>
+            <div class="controls-row">
+                <input id="searchInput" type="search" placeholder="Search feedback..." aria-label="Search feedback">
+                <select id="filterRating">
+                    <option value="">All ratings</option>
+                    <option value="5">5 stars</option>
+                    <option value="4">4 stars</option>
+                    <option value="3">3 stars</option>
+                    <option value="2">2 stars</option>
+                    <option value="1">1 star</option>
+                </select>
+                <select id="sortBy">
+                    <option value="newest">Newest</option>
+                    <option value="rating_desc">Rating: High → Low</option>
+                    <option value="rating_asc">Rating: Low → High</option>
+                </select>
+            </div>
+
+            <div id="feedbackContainer" class="feedback-list"></div>
+        </div>
+    </main>
+
+    <script src="all-feedback.js"></script>
+</body>
+
+</html>
